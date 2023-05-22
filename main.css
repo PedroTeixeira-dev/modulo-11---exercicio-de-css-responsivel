@@ -16,27 +16,34 @@ header h1 {
     font-size: 25px;
 }
 
+body {
+    background-color: rgb(236, 224, 224);
+}
 
 .container {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     flex-wrap: wrap;
+    max-width: 1500px;
 }
 
 .container nav a h2 {
     margin: 0;
     padding: 5;
     font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 section img {
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 10px;
 }
 
 section h2 {
@@ -77,8 +84,22 @@ section p {
     border-radius: 15px ;
     font-weight: bold;
     cursor: pointer;
-    
+    border: none;
+    transition: transform 0.2s ease-in-out;
 }
+
+.produto button:hover {
+    background-color: #2b4996;
+}
+
+.produto button:active {
+    transform:translateY(4px) ;
+}
+
+.colunas {
+    margin-bottom: 10px;
+}
+
 
 footer {
     background-color: #4672E3;
